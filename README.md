@@ -27,11 +27,11 @@ library(car)
 Data used in this project is not available for public access.
 
 ## How to use it
-The first markdown script (1.CohortIdentification) performs all steps required to clean and filter the study cohort of individuals with ASD who received psychotropic medications and were later diagnosed with a metabolic syndrome-related condition.
+The first markdown script (1.ProcessingASDCohort) performs all steps required to clean and filter the study cohort of individuals with ASD who received psychotropic medications and were later diagnosed with a metabolic syndrome-related condition.
 
-The second markdown script (2.PolypharmacyIdentification) processes prescription data to define and classify polypharmacy and monotherapy episodes based on overlapping medication events.
+The second markdown script (2.PolypharmacyMonotherapyIdentification) processes prescription data to define and classify polypharmacy and monotherapy episodes based on overlapping medication events.
 
-The third markdown script (3.SurvivalAnalysis) conducts a time-to-event analysis of metabolic syndrome onset following psychotropic exposure, using Cox proportional hazards models with sensitivity analyses.
+The third markdown script (3.SurvivalAnalsysis_ByConditionsMetabolicSyndrome) conducts a time-to-event analysis of metabolic syndrome onset following psychotropic exposure, using Cox proportional hazards models with sensitivity analyses.
 
 ## Analysis
 The cohort is restricted to individuals with incident psychotropic use after 2012, with confirmed ASD diagnoses and continuous enrollment prior to first exposure. Exclusion criteria are applied to eliminate early diagnoses of metabolic syndrome and non-oral or invalid prescriptions.
